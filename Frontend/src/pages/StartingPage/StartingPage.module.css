@@ -1,4 +1,4 @@
-.container {
+.startingPageContainer {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -6,22 +6,22 @@
   background-image: linear-gradient(45deg, #fd267a, #ff6036);
 }
 
-header {
+.startingPageContainer header {
   display: flex;
   align-items: center;
 }
 
-img {
+.startingPageContainer img {
   width: 60px;
   height: 60px;
   margin-right: 5px;
 }
 
-h1 {
+.startingPageContainer h1 {
   font-size: 36px;
   color: #fff;
 }
 
-a {
+.startingPageContainer a {
   text-decoration: none;
 }

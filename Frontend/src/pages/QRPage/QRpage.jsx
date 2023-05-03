@@ -3,7 +3,7 @@ import logo from "../../assets/logo-white3.png";
 
 const QRpage = () => {
   return (
-    <div className={classes.container}>
+    <div className={classes.qrPageContainer}>
       <div className={classes.helper}></div>
       <header>
         <img src={logo} />
