@@ -7,7 +7,7 @@ const IconsLayer = ({ clickedIcon }) => {
     <div className={classes.iconLayerWrapper}>
       <div className={`${classes.iconBox} ${classes.borderRed}`}>
         <CloseRoundedIcon
-          onClick={clickedIcon}
+          onClick={() => clickedIcon("DISLIKE")}
           style={{
             fontSize: "40px",
             color: "#ff4458",
@@ -16,7 +16,7 @@ const IconsLayer = ({ clickedIcon }) => {
       </div>
       <div className={`${classes.iconBox} ${classes.borderGreen}`}>
         <FavoriteIcon
-          onClick={clickedIcon}
+          onClick={() => clickedIcon("LIKE")}
           style={{
             fontSize: "40px",
             color: "#7cfda3",

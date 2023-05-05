@@ -10,7 +10,7 @@
   font-size: 30px;
   font-weight: 600;
   letter-spacing: 5px;
-  opacity: 1;
+  opacity: 0;
   transition: opacity 1s;
 }
 
