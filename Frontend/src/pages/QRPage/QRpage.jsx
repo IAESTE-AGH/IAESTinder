@@ -5,7 +5,7 @@ import classes from "./QRPage.module.css";
 import logo from "../../assets/inne/tinder-logo-white.webp";
 
 const QRpage = () => {
-  const link = "https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran";
+  const link = "https://iaeste-agh.github.io/IAESTE-PAC/";
   const canvasRef = useRef();
 
   useEffect(() => {
