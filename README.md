@@ -3,7 +3,7 @@
   <br>
 </p>
 
-## Link: https://iaeste-agh.github.io/IAESTE-PAC/
+## Link: https://iaeste-agh.github.io/SWIPE-AND_JOIN/
 
 ## Table of Contents 📝
 
@@ -24,19 +24,21 @@ To get started, users are required to answer a series of questions that help fin
 
 ### After reading the instructions, the user answers six fun questions, and then the program figures out which working group they should join based on their answers.
 
-<img height="30%" src="https://github.com/IAESTE-AGH/IAESTE-PAC/assets/68021413/5289cbe3-319c-4657-bc61-8df294cdb7cb">
-<img height="30%" src="https://github.com/IAESTE-AGH/IAESTE-PAC/assets/68021413/15def4e9-28e0-4454-8096-36d466452b9a">
-<img height="30%" src="https://github.com/IAESTE-AGH/IAESTE-PAC/assets/68021413/d8139833-46b4-49d1-a8ae-695a41c9738f">
+<img width="20%" src="https://github.com/IAESTE-AGH/SWIPE-AND-JOIN/assets/68021413/2092ca15-44b2-4efa-91cc-b936b00871f3">
+<img width="20%" src="https://github.com/IAESTE-AGH/SWIPE-AND-JOIN/assets/68021413/b7c8852b-75f7-445d-8c81-d7c64b0173ed">
+<img width="20%" src="https://github.com/IAESTE-AGH/SWIPE-AND-JOIN/assets/68021413/bbc64f0e-93ef-4123-9af0-ce5afaee80f2">
  
 ### Once he finishes the questionnaire, the user can check out the profiles of our different working groups to see what they do. They'll also find some cool pictures from work and team meetings.
 
-<img height="30%" src="https://github.com/IAESTE-AGH/IAESTE-PAC/assets/68021413/eddca13b-15d8-4dad-85e9-7076e6ff4da5">  
-<img height="30%" src="https://github.com/IAESTE-AGH/IAESTE-PAC/assets/68021413/048d0a8b-ce8d-4784-baea-ee97225fe69e">  
-<img height="30%" src="https://github.com/IAESTE-AGH/IAESTE-PAC/assets/68021413/8df214c0-ba5b-4d8e-8c6c-09b80b235c13">
+<img width="20%" src="https://github.com/IAESTE-AGH/SWIPE-AND-JOIN/assets/68021413/0573ed03-6667-4fc4-bada-fc2f43b15362">  
+<img width="20%" src="https://github.com/IAESTE-AGH/SWIPE-AND-JOIN/assets/68021413/baab92b6-7ca6-46a1-9d62-af16aced3920">  
+<img width="20%" src="https://github.com/IAESTE-AGH/SWIPE-AND-JOIN/assets/68021413/c99c5a4b-a202-4afa-bfdd-66001bcbf503">
 
 ### When the user gets to the match screen, they're asked to enter their email so they can get notified when the recruitment process starts.
 
-<img height="30%" src="https://github.com/IAESTE-AGH/IAESTE-PAC/assets/68021413/97c8f5f8-2331-4553-8758-6fb9e4508237">
+<img width="20%" src="https://github.com/IAESTE-AGH/SWIPE-AND-JOIN/assets/68021413/1b6955c9-0a12-407b-b29a-2d6c4b97a5b2">
+<img width="20%" src="https://github.com/IAESTE-AGH/SWIPE-AND-JOIN/assets/68021413/287eaade-58e5-4469-b648-626ffcd2e83f">
+
 
 ## Used technologies and tools :hammer_and_wrench:
 
