@@ -1,22 +1,51 @@
 .startingPage {
-  background-image: linear-gradient(to top right, #e7407d, #ef805e);
+  background-image: linear-gradient(to top, #1b1a1a 5%, #2e3e66 30%);
   height: 100svh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.startingPage header {
-  display: flex;
-  align-items: center;
+  position: relative;
 }
 
 .startingPage h1 {
-  font-size: 36px;
-  color: white;
-  margin-left: 10px;
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%, -90%);
+  font-size: 24px;
+  color: #ddd;
+  font-weight: 300;
+  font-family: "Open Sans", serif;
+  letter-spacing: 15px;
+  animation: showHeading 2s ease;
 }
 
 .startingPage img {
-  height: 45px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  animation: showLogo 1s ease;
+}
+
+@keyframes showLogo {
+  0% {
+    transform: translate(-50%, -60%), scale(0.8);
+    left: 50%;
+    top: 60%;
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -60%), scale(1);
+    left: 50%;
+    top: 50%;
+    opacity: 1;
+  }
+}
+
+@keyframes showHeading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

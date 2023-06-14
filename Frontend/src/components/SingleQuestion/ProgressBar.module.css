@@ -12,6 +12,6 @@
 .progressBarFill {
   height: 100%;
   position: absolute;
-  background-image: linear-gradient(to top right, #e7407d, #ef805e);
+  background-color: #5fc6ee;
   transition: width 0.3s ease-in-out;
 }

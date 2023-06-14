@@ -26,8 +26,9 @@
   display: flex;
   font-size: 18px;
   margin-top: 10px;
-  color: #e7407d;
+  color: #5fc6ee;
   animation: showNoti linear;
+  font-family: "Open Sans", serif;
 }
 
 .SaveMailPage section {
@@ -59,12 +60,13 @@
   border-radius: 26px;
   font-size: 18px;
   height: 40px;
-  background-image: linear-gradient(to right, #e7407d, #ef805e);
+  background-color: #5fc6ee;
   box-shadow: 0 4px 2px -2px gray;
   color: white;
   font-weight: bold;
   border: none;
   margin-top: auto;
+  font-family: "Open Sans", serif;
 }
 
 @keyframes showNoti {

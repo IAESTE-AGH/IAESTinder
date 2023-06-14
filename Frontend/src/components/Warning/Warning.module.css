@@ -3,6 +3,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(to top right, #e7407d, #ef805e);
-  color: #fff;
+  background-image: linear-gradient(to top, #1b1a1a 5%, #2e3e66 30%);
+}
+
+.warningContainer h1 {
+  color: #ddd;
+  font-family: "Open Sans", serif;
+  font-size: 35px;
 }

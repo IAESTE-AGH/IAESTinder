@@ -1,16 +1,15 @@
 import { Link } from "react-router-dom";
 import classes from "./InstructionPage.module.css";
-import logo from "../../assets/inne/tinder-logo-red.webp";
+import logo from "../../assets/inne/Logo_SWIPE_JOIN.webp";
 import { motion } from "framer-motion";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
-import { colors } from "@mui/material";
 
 const InstructionPage = () => {
   const styledIcon = (
     <KeyboardDoubleArrowRightIcon
       style={{
         fontSize: "26px",
-        color: "#e7407d",
+        color: "#46B177",
         marginRight: "5px",
         marginTop: "1px",
       }}
@@ -55,7 +54,6 @@ const InstructionPage = () => {
       <section>
         <header>
           <img src={logo} />
-          <h1>Witamy w IAESTE PAC</h1>
         </header>
         <ul>
           {instructionData.map((item, index) => (

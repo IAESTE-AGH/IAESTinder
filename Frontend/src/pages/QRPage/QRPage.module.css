@@ -1,15 +1,11 @@
 .qrPage {
-  background-image: linear-gradient(to top right, #e7407d, #ef805e);
+  background-image: linear-gradient(to top, #1b1a1a 5%, #2e3e66 30%);
   height: 100svh;
+  padding: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-}
-
-.emptyWrapper {
-  width: 100%;
-  height: 250px;
 }
 
 .qrPage header {
@@ -19,36 +15,52 @@
 }
 
 .qrPage img {
-  height: 45px;
-}
-
-.qrPage h1 {
-  font-size: 36px;
-  color: #fff;
-  margin-left: 10px;
+  height: 60px;
 }
 
 .qrWrapper {
-  height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .qrPage p {
-  font-size: 12px;
+  font-size: 16px;
   text-align: center;
-  margin-bottom: 20px;
-  color: #fff;
+  margin-top: 20px;
+  color: #ddd;
+  font-family: "Open Sans", serif;
 }
 
-.grPage canvas {
-  height: 100%;
+.qrPage button {
   width: 100%;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  border: none;
+  border-radius: 26px;
+  background-color: #5fc6ee;
+  font-family: "Open Sans", serif;
 }
 
 @media (min-width: 500px) {
   .qrPage p {
     font-size: 18px;
+  }
+
+  .qrPage button {
+    width: 70%;
+    height: 50px;
+    font-size: 24px;
+  }
+
+  .qrPage button:hover {
+    cursor: pointer;
+  }
+
+  .qrPage img {
+    height: 80px;
   }
 }

@@ -35,11 +35,12 @@
   list-style-type: none;
   color: #b0b0b0;
   transition: border 0.15s linear, color 0.15s ease;
+  font-family: "Open Sans", serif;
 }
 
 .multipleQuestionContainer .activeWord {
-  color: #ff6b6b;
-  border: 1px solid#ff6b6b;
+  color: #5fc6ee;
+  border: 1px solid#5fc6ee;
 }
 
 .multipleQuestionContainer button {
@@ -52,6 +53,7 @@
   border-radius: 26px;
   border: none;
   text-decoration: none;
+  font-family: "Open Sans", serif;
 }
 
 .multipleQuestionContainer button:focus {
@@ -59,7 +61,7 @@
 }
 
 .activeButton {
-  background-image: linear-gradient(to right, #e7407d, #ef805e);
+  background-color: #5fc6ee;
 }
 
 .disabledButton {

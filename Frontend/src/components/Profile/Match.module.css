@@ -29,7 +29,7 @@
   left: 50%;
   transform: translateX(-50%);
   font-size: 18px;
-  background-image: linear-gradient(to right, #e7407d, #ef805e);
+  background-color: #5fc6ee;
   color: white;
   border-radius: 26px;
   border: none;

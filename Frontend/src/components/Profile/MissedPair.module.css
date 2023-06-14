@@ -9,14 +9,7 @@
   display: flex;
   align-items: center;
   border-radius: 10px;
-  background: linear-gradient(
-    to right,
-    #bf953f,
-    #fcf6ba,
-    #b38728,
-    #fbf5b7,
-    #aa771c
-  );
+  background-color: #5fc6ee;
   z-index: 4;
   animation: banner 0.5s linear;
 }
@@ -33,10 +26,12 @@
 .textWrapper h3 {
   font-size: 15px;
   font-weight: 600;
+  font-family: "Open Sans", serif;
 }
 .textWrapper h4 {
   font-size: 12px;
   font-weight: 400;
+  font-family: "Open Sans", serif;
 }
 
 .overlay {
@@ -61,12 +56,13 @@
   left: 50%;
   transform: translateX(-50%);
   font-size: 18px;
-  background-image: linear-gradient(to right, #e7407d, #ef805e);
+  background-color: #5fc6ee;
   color: white;
   border-radius: 26px;
   border: none;
   font-weight: 500;
   z-index: 5;
+  font-family: "Open Sans", serif;
 }
 
 @keyframes banner {

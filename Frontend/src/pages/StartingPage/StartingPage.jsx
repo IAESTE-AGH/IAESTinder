@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import classes from "./StartingPage.module.css";
-import logo from "../../assets/inne/tinder-logo-white.webp";
+import logo from "../../assets/inne/Logo_SWIPE_JOIN.webp";
 
 const StartingPage = () => {
   const navigate = useNavigate();
@@ -24,10 +24,8 @@ const StartingPage = () => {
         transition={{ duration: 0.3 }}
       >
         <main>
-          <header>
-            <img src={logo} />
-            <h1>IAESTE PAC</h1>
-          </header>
+          <img src={logo} />
+          <h1>IAESTE</h1>
         </main>
       </motion.main>
     </Link>

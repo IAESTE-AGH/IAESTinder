@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import logo from "../../assets/inne/tinder-logo-red.webp";
+import logo from "../../assets/inne/Logo_SWIPE_JOIN.webp";
 import classes from "./LoaderPage.module.css";
 const LoaderPage = () => {
   return (
@@ -12,7 +12,6 @@ const LoaderPage = () => {
     >
       <header>
         <img src={logo} />
-        <h1>IAESTE PAC</h1>
       </header>
     </motion.main>
   );

@@ -1,10 +1,11 @@
 import { useState, useRef, useEffect } from "react";
 import QRCode from "qrcode";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import classes from "./QRPage.module.css";
-import logo from "../../assets/inne/tinder-logo-white.webp";
+import logo from "../../assets/inne/Logo_SWIPE_JOIN.webp";
 
 const QRpage = () => {
+  const navigate = useNavigate();
   const link = "https://iaeste-agh.github.io/IAESTE-PAC/";
   const canvasRef = useRef();
 
@@ -19,18 +20,16 @@ const QRpage = () => {
   return (
     <Link to="/instruction" style={{ textDecoration: "none" }}>
       <main className={classes.qrPage}>
-        <div className={classes.emptyWrapper}></div>
-        <header>
-          <img src={logo} />
-          <h1>IAESTE PAC</h1>
-        </header>
+        <img src={logo} />
         <div className={classes.qrWrapper}>
+          <canvas ref={canvasRef} />
           <p>
             Dzięki zeskanowaniu kodu QR będziesz mógł skorzystać <br></br> z
             naszej aplikacji w swoim telefonie!
           </p>
-          <canvas ref={canvasRef} />
         </div>
+
+        <button onClick={() => navigate("/instruction")}>Kontynuuj</button>
       </main>
     </Link>
   );

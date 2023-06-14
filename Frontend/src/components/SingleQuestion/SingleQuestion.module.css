@@ -29,6 +29,7 @@
   list-style-type: none;
   text-align: center;
   transition: border 0.15s linear, color 0.15s linear;
+  font-family: "Open Sans", serif;
 }
 
 .deactiveAnswer {
@@ -37,8 +38,8 @@
 }
 
 .activeAnswer {
-  border: 1px solid #ff6b6b;
-  color: #ff6b6b;
+  border: 1px solid #5fc6ee;
+  color: #5fc6ee;
 }
 
 .singleQuestionContainer button {
@@ -50,10 +51,11 @@
   color: white;
   border-radius: 26px;
   border: none;
+  font-family: "Open Sans", serif;
 }
 
 .submitAnswerEnabled {
-  background-image: linear-gradient(to right, #e7407d, #ef805e);
+  background-color: #5fc6ee;
 }
 
 .submitAnswerDisabled {

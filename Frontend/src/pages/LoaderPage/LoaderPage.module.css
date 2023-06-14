@@ -15,12 +15,6 @@
   align-items: center;
 }
 
-.loadingPage h1 {
-  font-size: 36px;
-  color: #e7407d;
-  margin-left: 10px;
-}
-
 .loadingPage img {
-  height: 45px;
+  height: 80px;
 }

@@ -20,7 +20,7 @@ const IconsLayer = ({ clickedIcon }) => {
           onClick={() => clickedIcon("LIKE")}
           style={{
             fontSize: "30px",
-            color: "#7cfda3",
+            color: "#46B177",
           }}
         />
       </div>
