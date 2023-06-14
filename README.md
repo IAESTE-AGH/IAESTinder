@@ -1,9 +1,7 @@
 <p align="center"> 
-  <img width="20%" src="https://github.com/IAESTE-AGH/IAESTE-PAC/assets/68021413/cf896058-e7b2-4875-9f61-52b37932cbae">
+  <img width="20%" src="https://github.com/IAESTE-AGH/SWIPE-AND-JOIN/assets/68021413/1231680b-a465-4b68-ac9f-41c24d0bea16">
   <br>
 </p>
-
-# IAESTE PAC
 
 ## Link: https://iaeste-agh.github.io/IAESTE-PAC/
 
