@@ -3,7 +3,7 @@
   <br>
 </p>
 
-## Link: https://iaeste-agh.github.io/SWIPE-AND_JOIN/
+## Link: https://iaeste-agh.github.io/SWIPE-AND-JOIN/
 
 ## Table of Contents 📝
 
