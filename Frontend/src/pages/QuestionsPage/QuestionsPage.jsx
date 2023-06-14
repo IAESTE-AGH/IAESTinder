@@ -112,17 +112,13 @@ const QuestionsPage = () => {
         <SingleQuestion
           questionsData={QUESTIONS_DATA}
           questionsIndex={questionsIndex}
-          nextQuestion={(markedAnswer, indexx) =>
-            nextQuestionHandler(markedAnswer)
-          }
+          nextQuestion={(markedAnswer) => nextQuestionHandler(markedAnswer)}
         />
       ) : (
         <MultipleQuestion
           questionsData={QUESTIONS_DATA}
           questionsIndex={questionsIndex}
-          nextQuestion={(markedAnswer, index) =>
-            nextQuestionHandler(markedAnswer)
-          }
+          nextQuestion={(markedAnswer) => nextQuestionHandler(markedAnswer)}
         />
       )}
     </motion.main>

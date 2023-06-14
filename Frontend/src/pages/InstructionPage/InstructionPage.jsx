@@ -30,9 +30,9 @@ const InstructionPage = () => {
       icon: styledIcon,
     },
     {
-      title: "Czym jest IAESTE PAC?",
+      title: "Czym jest Swipe&Join?",
       description:
-        "IAESTE PAC to narzędzie, dzięki któremu dowiesz się, do której grupy roboczej pasujesz najbardziej",
+        "IAESTE Swipe&Join to narzędzie, dzięki któremu dowiesz się, do której grupy roboczej pasujesz najbardziej",
       icon: styledIcon,
     },
     {

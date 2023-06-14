@@ -6,7 +6,7 @@ import logo from "../../assets/inne/Logo_SWIPE_JOIN.webp";
 
 const QRpage = () => {
   const navigate = useNavigate();
-  const link = "https://iaeste-agh.github.io/IAESTE-PAC/";
+  const link = "https://iaeste-agh.github.io/SWIPE-AND-JOIN/";
   const canvasRef = useRef();
 
   useEffect(() => {
