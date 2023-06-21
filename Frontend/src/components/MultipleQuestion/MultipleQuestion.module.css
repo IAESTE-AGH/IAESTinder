@@ -16,13 +16,30 @@
   color: gray;
 }
 
-.multipleQuestionContainer ul {
+.scrollContainer{
+  position: relative;
+  margin-bottom: 20px;
   height: auto;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.activeOverlay{
+  background: linear-gradient(to top, white, rgba(255, 255, 255, 0));
+  opacity: 1; 
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.list{
+  overflow-y: scroll;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 20px;
   gap: 10px;
-  overflow-y: auto;
 }
 
 .multipleQuestionContainer li {
