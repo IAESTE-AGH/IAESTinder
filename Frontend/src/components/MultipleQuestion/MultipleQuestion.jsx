@@ -83,7 +83,7 @@ const MultipleQuestion = (props) => {
       <button
         onClick={changeQuestionHandler}
         className={
-          counter === 0 ? classes.disabledButton : classes.activeButton
+          counter < 5 ? classes.disabledButton : classes.activeButton
         }
         disabled={isContinueDisabled}
       >
