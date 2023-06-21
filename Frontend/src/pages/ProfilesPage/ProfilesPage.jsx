@@ -97,6 +97,31 @@ const ProfilesPage = () => {
           type="hidden"
         />
       )}
+
+      { matchOrMissPair ? 
+      <motion.div
+        className={classes.swipeArea}
+        ref={constraintsRef}
+        style={{ x }}
+        dragConstraints={constraintsRef}
+        dragControls={controls}
+        dragListener={true} //chuj to wie co robi reszta, skopiowane z tych dwóch stron: https://codesandbox.io/s/drag-forked-gkkhv5?file=/src/Example.tsx:265-320, https://codesandbox.io/s/framer-motion-path-drawing-drag-and-usetransform-forked-42wjk4?file=/src/Example.tsx
+        onDrag={setSwipeState}
+        onDragEnd={checkSwipePosibillity}
+      >
+        <Profile
+          className={classes.visibleProfile}
+          profileIndex={currentProfileIndex}
+          profileData={profileData}
+          isHidden={false}
+          matchProfile={matchProfile}
+          missedPair={missedPair}
+          liked={liked}
+        />
+      </motion.div>
+      
+      :
+
       <motion.div
         className={classes.swipeArea}
         ref={constraintsRef}
@@ -117,7 +142,8 @@ const ProfilesPage = () => {
           missedPair={missedPair}
           liked={liked}
         />
-      </motion.div>
+      </motion.div>}
+
       {!matchOrMissPair && (
         <IconsLayer clickedIcon={(reaction) => clickedIconHandler(reaction)} />
       )}
