@@ -1,6 +1,7 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useQuestions } from "../../store/questions-context";
 import classes from "./MultipleQuestion.module.css";
+
 
 const MultipleQuestion = (props) => {
   const {
@@ -21,7 +22,6 @@ const MultipleQuestion = (props) => {
     const clickedInterest = copiedList.find(
       (item) => item.text == interestObj.text
     );
-
     if (counter < 5) {
       if (!clickedInterest.marked) {
         clickedInterest.marked = true;
@@ -87,7 +87,10 @@ const MultipleQuestion = (props) => {
         }
         disabled={isContinueDisabled}
       >
-        {`Kontynuuj ${counter}/5`}
+        Kontynuuj
+        <div className={(counter > 0 && counter < 5) ? classes.activeSlasher : classes.disabledSlasher}>
+        {` ${counter}/5`}
+        </div>
       </button>
     </section>
   );
