@@ -93,6 +93,10 @@
   color: #5fc5eec2;
 }
 
+.disabledSlasher{
+  color: white;
+}
+
 @media (min-width: 500px) {
   .multipleQuestionContainer {
     justify-content: space-around;

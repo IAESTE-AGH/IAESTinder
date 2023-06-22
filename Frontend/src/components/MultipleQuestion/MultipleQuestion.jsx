@@ -113,13 +113,12 @@ const MultipleQuestion = (props) => {
       <button
         onClick={changeQuestionHandler}
         className={
-          counter < 5 ? classes.disabledButton : classes.activeButton
+          counter != 5 ? classes.disabledButton : classes.activeButton
         }
         disabled={isContinueDisabled}
       >
-        Kontynuuj
-        <div className={(counter > 0 && counter < 5) ? classes.activeSlasher : classes.disabledSlasher}>
-        {` ${counter}/5`}
+        <div className={(counter != 0 && counter != 5) ? classes.activeSlasher : classes.disabledSlasher}>
+        {`Kontynuuj ${counter}/5`}
         </div>
       </button>
     </section>

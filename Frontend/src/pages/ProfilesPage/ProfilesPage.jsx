@@ -7,6 +7,7 @@ import {
   useDragControls,
   useMotionValue,
   useTransform,
+  useVelocity,
 } from "framer-motion";
 import TopBar from "../../components/Topbar/TopBar";
 import Profile from "../../components/Profile/Profile";
@@ -20,11 +21,11 @@ const ProfilesPage = () => {
   const [matchProfile, setMatchProfile] = useState(false);
   const [missedPair, setMissedPair] = useState(false);
   const [liked, setLiked] = useState(0);
+  const [xCords, setXCords] = useState(0);
   const { matchedGroup } = useQuestions();
   const constraintsRef = useRef(null);
   const controls = useDragControls();
-  const x = useMotionValue();
-
+  const x = useMotionValue(0);
   const matchProfileIndex = profileData.findIndex(
     (item) => item.name == matchedGroup[0]
   );
@@ -56,22 +57,23 @@ const ProfilesPage = () => {
     if (currentProfileIndex < profileData.length - 1)
       setCurrentProfileIndex((prev) => prev + 1);
   };
-  console.log(x.get());
+
   //funkcja sprawdzająca położenie swipowanej grupy - setLiked = 1 -> polubione, 0 -> neutral, -1 -> dislike
-  const setSwipeState = () => {
-    if (x.get() > 80) {
+  const setSwipeState = (event, info) => {
+    //console.log("Velocity X:", info.velocity.x);
+    setXCords(x.get());
+    if (x.get() > 80 || info.velocity.x > 1000 ) {
       setLiked(1);
-    } else if (x.get() < -80) {
+    } else if (x.get() < -80 || info.velocity.x < -1000) {
       setLiked(-1);
     } else {
       setLiked(0);
     }
-    //console.log(x.get());
-    //console.log(liked);
   };
 
   //funkcja odpala się w momencie gdy user przestaje dotykać ekran, lajkujemy bądź nie
   const checkSwipePosibillity = () => {
+    setXCords(0);
     if (liked === 1) {
       clickedIconHandler("LIKE");
     } else if (liked === -1) {
@@ -117,6 +119,7 @@ const ProfilesPage = () => {
           matchProfile={matchProfile}
           missedPair={missedPair}
           liked={liked}
+          xCords={xCords}
         />
       </motion.div>
       
@@ -141,6 +144,7 @@ const ProfilesPage = () => {
           matchProfile={matchProfile}
           missedPair={missedPair}
           liked={liked}
+          xCords={xCords}
         />
       </motion.div>}
 

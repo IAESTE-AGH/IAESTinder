@@ -13,10 +13,12 @@ const Profile = ({
   missedPair,
   isHidden,
   liked,
+  xCords,
 }) => {
   const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
   const [activeLikeSticker, setActiveLikeSticker] = useState(false);
   const [activeNopeSticker, setActiveNopeSticker] = useState(false);
+  const [angle, setAngle] = useState(0);
 
   const displayStickerHandler = () => {
     if (liked > 80) {
@@ -45,6 +47,10 @@ const Profile = ({
     }
   }, [liked]);
 
+  useEffect(() =>{
+    console.log(xCords);
+    setAngle(-xCords * 0.15);
+  }, [xCords])
   const leftListenerHandler = () => {
     if (currentPhotoIndex >= 1) {
       setCurrentPhotoIndex((prev) => prev - 1);
@@ -60,6 +66,7 @@ const Profile = ({
   return (
     <div
       className={`${isHidden ? classes.hiddenContainer : classes.container}`}
+      style = {isHidden ? {} : {transform: `rotate(${angle}deg)`} }
     >
       <div
         className={`${isHidden ? classes.leftListene : classes.leftListener}`}
