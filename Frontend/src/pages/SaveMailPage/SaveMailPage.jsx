@@ -44,21 +44,23 @@ const SaveMailPage = () => {
 
     console.log(emailData);
 
-    const response = await fetch(`${API_KEY}`, {
-      method: "POST",
-      body: JSON.stringify(emailData),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    // Cors policy error to fix
 
-    const responseData = await response.json();
-    console.log(responseData);
-    if (!response.ok) {
-      setNotification("Wysyłanie maila nie powiodło się");
-      setError(true);
-      throw new Error(data.message || "Could not add email");
-    }
+    // const response = await fetch(`${API_KEY}`, {
+    //   method: "POST",
+    //   body: JSON.stringify(emailData),
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    // });
+
+    // const responseData = await response.json();
+    // console.log(responseData);
+    // if (!response.ok) {
+    //   setNotification("Wysyłanie maila nie powiodło się");
+    //   setError(true);
+    //   throw new Error(data.message || "Could not add email");
+    // }
 
     setNotification("Wysyłanie maila powiodło się");
     setSuccess(true);
