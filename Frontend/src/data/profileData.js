@@ -30,15 +30,15 @@ export const PROFILES_DATA = [
   {
     name: "HR",
     description:
-      "Nasza grupa spaja cały komitet w jedność, żadne piwo i integracja nie są nam straszne, a ludzie z innych grup, którzy odwiedzają nas na spotkaniach mówią, że jesteśmy jak rodzina (takie patofamily XD)",
+      "Nasza grupa spaja cały komitet w jedność, żadna forma integracji nie jest nam straszna, a ludzie z innych grup, którzy odwiedzają nas na spotkaniach mówią, że jesteśmy jak rodzina.",
     distance: "W okolicy",
     pictures: [hr1, hr2, hr3, hr4, hr5],
-    interests: ["integracja", "wyjazdy", "motywacja", "HR działa", "piwo"],
+    interests: ["integracja", "wyjazdy", "motywacja", "HR działa"],
   },
   {
     name: "IO",
     description:
-      "Sprawdzamy dokumenty aplikacyjne i opiekujemy się przyjeżdżającymi praktykantami. Po godzinach lubimy picie tequili z bitą śmietaną, dobre karaoke i papieża.",
+      "Sprawdzamy dokumenty aplikacyjne i opiekujemy się przyjeżdżającymi praktykantami. Po godzinach lubimy picie napojów z bitą śmietaną, dobre karaoke i papieża.",
     distance: "W okolicy",
     pictures: [io1, io2, io3, io4, io5],
     interests: [
@@ -74,7 +74,7 @@ export const PROFILES_DATA = [
   {
     name: "PR",
     description:
-      "PR, grupa promocyjna, to grupa komunikatywnych, otwartych i gotowych do działania osób. Mamy dodatkowe punkty za posiadanie Puzzla mamy dodatkowe punkty. Jeśli potrzebujesz jakiegoś pościka, to wiesz, gdzie podbijać.",
+      "PR zajmuje się promocją, jest to grupa komunikatywnych, otwartych i gotowych do działania osób. Mamy dodatkowe punkty za posiadanie Puzzla. Jeśli potrzebujesz jakiegoś pościka, to wiesz, gdzie podbijać.",
     distance: "W okolicy",
     pictures: [pr1, pr2, pr3, pr4],
     interests: [
