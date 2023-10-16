@@ -81,24 +81,17 @@ const SaveMailPage = () => {
       transition={{ duration: 0.5 }}
     >
       <section>
-        <h1 className={classes.header}>Podaj swój adres email</h1>
-        <p className={classes.paragraph}>
-          Jeśli podasz nam adres email, skontaktujemy się z tobą gdy zacznie się
-          rekrutacja
-        </p>
-
-        <form onSubmit={sumbitFormHandler}>
-          <input
-            onChange={emailHandler}
-            value={email}
-            type="text"
-            placeholder="Podaj email"
-          />
-          {(success || error) && <h2>{notification}</h2>}
-          <button type="submit" className={classes.sendBottomColor}>
-            Wyślij
+        <text>
+          <h1 className={classes.header}>Zapraszamy do kolejnego etapu rekrutacji!</h1>
+          <p className={classes.paragraph}>
+            Po wypełnieniu formularza zgłoszeniowego poinformujemy Cię o kolejnych etapach rekrutacji 
+          </p>
+        </text>
+        <a className={classes.sendBottomColor} href="https://forms.office.com/r/27JL2Hedmf">
+          <button type="submit" className={classes.formButton}>
+            Wypełnij formularz
           </button>
-        </form>
+        </a>
       </section>
     </motion.main>
   );
