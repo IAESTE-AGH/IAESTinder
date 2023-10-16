@@ -13,7 +13,7 @@ const MissedPair = () => {
         </div>
       </div>
       <div className={classes.overlay}></div>
-      <Link to="/saveMail" style={{ textDecoration: "none" }}>
+      <Link to="/endingPage" style={{ textDecoration: "none" }}>
         <button className={classes.submitAnswear}>Kontynuuj</button>
       </Link>
     </>

@@ -13,9 +13,22 @@ const EndingPage = () => {
     >
       <img src={logo} />
       <header>
-        <h1>Do zobaczenia na rekrutacji!</h1>
+        <h2>
+          Znalazłeś grupę do której pasujesz <span>&#129392;</span>! Proponujemy
+          pierwsze spotkanie na rekrutacji, ale najpierw opowiedz nam coś o
+          sobie &#128522;
+        </h2>
+
+        <a
+          className={classes.sendBottomColor}
+          href="https://forms.office.com/r/27JL2Hedmf"
+        >
+          <button type="submit" className={classes.formButton}>
+            Przejdź do formularza
+          </button>
+        </a>
       </header>
-      <h2>IAESTE</h2>
+      <h3>IAESTE</h3>
     </motion.main>
   );
 };
