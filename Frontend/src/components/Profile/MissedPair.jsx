@@ -9,7 +9,7 @@ const MissedPair = () => {
         <VolunteerActivismIcon style={{ fontSize: "30px", color: "#fff" }} />
         <div className={classes.textWrapper}>
           <h3>Ups! Para przeszła ci koło nosa!</h3>
-          <h4>O to para, której nie wybrałeś, a do której pasujesz!</h4>
+          <h4>O to grupa, której nie wybrałeś, a do której pasujesz!</h4>
         </div>
       </div>
       <div className={classes.overlay}></div>
