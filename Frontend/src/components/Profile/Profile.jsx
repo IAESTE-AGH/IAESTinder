@@ -30,6 +30,8 @@ const Profile = ({
     }
   };
 
+  console.log(matchProfile);
+
   useEffect(() => {
     setCurrentPhotoIndex(0);
     setActiveLikeSticker(false);
@@ -47,10 +49,10 @@ const Profile = ({
     }
   }, [liked]);
 
-  useEffect(() =>{
+  useEffect(() => {
     console.log(xCords);
     setAngle(-xCords * 0.15);
-  }, [xCords])
+  }, [xCords]);
   const leftListenerHandler = () => {
     if (currentPhotoIndex >= 1) {
       setCurrentPhotoIndex((prev) => prev - 1);
@@ -66,7 +68,11 @@ const Profile = ({
   return (
     <div
       className={`${isHidden ? classes.hiddenContainer : classes.container}`}
-      style = {isHidden ? {} : {transform: `rotate(${angle}deg)`} }
+      style={
+        isHidden
+          ? { overflowY: "hidden" }
+          : { transform: `rotate(${angle}deg)` }
+      }
     >
       <div
         className={`${isHidden ? classes.leftListene : classes.leftListener}`}

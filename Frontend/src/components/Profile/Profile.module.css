@@ -62,13 +62,13 @@
   position: sticky;
   height: 50%;
   background: linear-gradient(to top, #010101, rgba(0, 0, 0, 0));
-  bottom: 10.0%;
+  bottom: 10%;
 }
 .hiddenGradient {
   position: sticky;
   height: 50%;
   background: linear-gradient(to top, rgb(1, 1, 1), rgba(0, 0, 0, 0));
-  bottom: 11.0%;
+  bottom: 11%;
   z-index: 0;
 }
 
